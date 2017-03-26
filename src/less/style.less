@@ -1,14 +1,12 @@
+@import (less) 'normalize.css';
+@import (less) 'external/flexboxgrid/css/flexboxgrid.css';
+
 @import 'variables.less';
-
 @import 'global.less';
-@import 'blocks/owl.carousel.less';
+@import 'blocks/grid.less';
 
+// mixins
+@import 'mixins/title.less';
 
-* {
-	box-sizing: border-box;
-}
-
-img {
-	max-width: 100%;
-	height: auto;
-}
+// blocks
+@import 'blocks/page-header.less';

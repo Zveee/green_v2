@@ -1,2 +1,130 @@
-body
-  .foo ылвоаиыоаи
+extends extends/layout.pug 
+
+
+block main
+	.promo
+		.promo__inner.container-fluid
+			.row
+				h1.promo__title Семейный отдых на берегу Финского залива
+				span.promo__text
+					| Green Valley - это современная база отдыха
+					| в курортном районе для здорового отдыха всей семьёй.
+	.intro
+		.intro__inner.container-fluid
+			.row
+				h2.intro__title Здоровый отдых
+				.col-lg-offset-3.col-lg-6
+					p.intro__text
+						| Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. Почувствуйте отдых!
+				.col-lg-offset-2.col-lg-8
+					ul.intro__advantages
+						li.advantages__item
+							img.advantages__icon(src='../img/adv-pool.png', alt='') 
+							span.advantages__name бассейн
+						li.advantages__item
+							img.advantages__icon(src='../img/adv-sport.png', alt='') 
+							span.advantages__name спортивная площадка
+						li.advantages__item
+							img.advantages__icon(src='../img/adv-billiard.png', alt='')
+							span.advantages__name бильярд
+						li.advantages__item
+							img.advantages__icon(src='../img/adv-spa.png', alt='') 
+							span.advantages__name спа
+						li.advantages__item
+							img.advantages__icon(src='../img/adv-sauna.png', alt='') 
+							span.advantages__name бани
+						li.advantages__item
+							img.advantages__icon(src='../img/adv-animate.png', alt='') 
+							span.advantages__name анимация
+	section.gallery
+		.gallery__inner.container-fluid
+			.row
+				img.gallery__full-photo(src='../img/gallery-full-photo.jpg', alt='')
+				.gallery__slider
+					.gallery__item
+						img(src='', alt='')
+					.gallery__item
+						img(src='', alt='')
+					.gallery__item
+						img(src='', alt='')
+					.gallery__item
+						img(src='', alt='')
+					.gallery__item
+						img(src='', alt='')
+					.gallery__item
+						img(src='', alt='')
+					.gallery__item
+						img(src='', alt='')
+	section.reviews
+		.reviews__inner.container-fluid
+			.row
+				h2.reviews__title Отзывы
+				.col-lg-offset-1.col-lg-5
+					blockquote.reviews__item
+						img.reviews__photo(src='../img/reviews-author-1.jpg',  alt='')
+						cite.reviews__author Екатерина В.
+						p.reviews__text
+							| Наша семья счастлива, что открыла для себя Green Valley. Замечательный, комфортный отдых. Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями!
+						span.reviews__date
+							| Дата отдыха: 
+							br
+							| 						01.06.2015 - 08.06.2015
+				.col-lg-5
+					blockquote.reviews__item
+						img.reviews__photo(src='../img/reviews-author-2.jpg',  alt='')
+						cite.reviews__author Екатерина В.
+						p.reviews__text
+							| Спасибо всем без исключения сотрудникам отеля за прекрасные дни, проведённые у вас! Наслаждались тишиной, отдохнули прекрасно. Понравилось всё: тёплый приём персоналом.
+						span.reviews__date
+							| Дата отдыха: 
+							br
+							| 						15.05.2015 - 20.05.2015
+			.row
+				a.reviews__btn-all(href='#') все отзывы
+	section.special
+		.special__inner.container-fluid
+			.row
+				h2.special__title Акции и предложения
+				.col-lg-12
+					.special__box
+						.special__box-wrap
+							span.special__box-title СКИДКИ В МАЕ
+							p.special__box-text Забронируйте номер или коттедж любой категории до 31 июля и получите скидку 10%!
+					.special__pages
+	section.location
+		.location__inner.container-fluid
+			.row
+				h2.location__title Как до нас добраться
+				.col-lg-12
+					.location__map
+						iframe(src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d6480.813009043447!2d29.63748895056295!3d60.19371615256241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x469631bb30342a8b%3A0xae202675aa98d117!2z0J_Qu9C-0YnQsNC00Ywg0JLQvtGB0YHRgtCw0L3QuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMDM2!3m2!1d59.931591499999996!2d30.3604421!4m5!1s0x469655a8f7aaa509%3A0xb77c80ff709e7926!2z0J_RgNC40LzQvtGA0YHQutC-0LUg0YguLCA2MDEsINCzLiDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk5MDA0!3m2!1d60.192182599999995!2d29.639909099999997!5e0!3m2!1sru!2sru!4v1487953650917" width="1180" height="400" frameborder="0" style="border:0" allowfullscreen)
+				.col-lg-offset-1.col-lg-5
+					.location__get
+						p.location__get-bus АВТОБУСЫ
+						p.get-bus__list
+							| № 211 от станции метро "Черная речка" до остановки "Санаторий Репино"
+							br
+							| 					№ 305К от станции метро "Старая деревня"
+							br
+							| 					№ 680К от станции метро "Проспект Просвещения"
+							br
+							| 					№ 400К от станции метро "Площадь Ленина"
+				.col-lg-5
+					.location__get
+						p.location__get-train ЭЛЕКТРОПОЕЗД
+						p.location__text
+							| Электропоезд Выборгского направления от Финляндского вокзала Санкт-Петербурга до платформы "Репино"
+	section.offers
+		.offers__inner.container-fluid
+			.row
+				h2.offers__title Где вы хотите отдохнуть?
+				.col-lg-offset-2.col-lg-4
+					.offers__block
+						img.block__img(src='../img/hotel.jpg', alt='')
+						h3.block__name В отеле
+						p.block__price от 4000 руб./сутки
+				.col-lg-4
+					.offers__block
+						img.block__img(src='../img/cottage.jpg', alt='')
+						h3.block__name В коттедже
+						p.block__price от 6800 руб./сутки
